@@ -9,8 +9,8 @@ public class LoginServiceImpl implements LoginService {
     @Autowired
     LoginMapper loginMapper;
 
-    @Over
+    @Override
     public void save(Login login) {
-        loginMapper.save();
+        loginMapper.save(login);
     }
 }
